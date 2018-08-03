@@ -1,0 +1,29 @@
+package ex1;
+
+import java.util.Scanner;
+
+//عدد از ورودی خوانده و جمع آن ها را نمایش دهدn
+
+public class Ex1 {
+	
+	public static void main(String[]args)
+	{
+		int sizeOfArray , sum = 0;
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter size of array:  ");
+		sizeOfArray = input.nextInt();
+		int[] sumArray = new int[sizeOfArray];
+		
+		System.out.println("Enter array elements");
+		
+		for(int i = 0 ; i<sizeOfArray ; i++)
+		{
+			sumArray[i] = input.nextInt();
+			sum += sumArray[i];
+		}
+		
+		System.out.print(String.format("Sum of elements : %d",sum ));
+		
+	
+	}
+}
